@@ -23,4 +23,4 @@ INSERT INTO public.users (fullname, department_id) VALUES ('Byron Cole', 1);
 INSERT INTO public.users (fullname, department_id) VALUES ('Colin Davidson', 2);
 INSERT INTO public.users (fullname, department_id) VALUES ('Dylan Evans', 2);
 INSERT INTO public.users (fullname, department_id) VALUES ('Elliott Foster', 3);
-INSERT INTO public.users (fullname, department_id) VALUES ('Frank Green', 3);
+INSERT INTO public.users (fullname, department_id) VALUES ('Frank Grant', 3);
