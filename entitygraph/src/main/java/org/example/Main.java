@@ -12,6 +12,7 @@ public class Main {
     public static void main(String[] args) {
         URI url = UriBuilder.fromUri("http://127.0.0.1").port(8080).build();
         ResourceConfig resourceConfig = new ResourceConfig();
+        resourceConfig.register(CorsFilter.class);
         resourceConfig.register(ScopeController.class);
         resourceConfig.register(new AbstractBinder() {
             @Override

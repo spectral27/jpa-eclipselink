@@ -18,5 +18,8 @@ CREATE TABLE public.version (
 INSERT INTO public.scope ("name") VALUES ('JPA');
 INSERT INTO public.scope ("name") VALUES ('EclipseLink');
 
-INSERT INTO public.version (version, released, scope_id) VALUES ('3.1.0', '2023-03-30', 1);
-INSERT INTO public.version (version, released, scope_id) VALUES ('4.0.0', '2024-02-22', 2);
+INSERT INTO public.version (version, released, scope_id) VALUES ('3.1.0', '2022-03-30', 1);
+INSERT INTO public.version (version, released, scope_id) VALUES ('3.0.0', '2020-10-21', 1);
+
+INSERT INTO public.version (version, released, scope_id) VALUES ('4.0.2', '2023-06-16', 2);
+INSERT INTO public.version (version, released, scope_id) VALUES ('3.0.4', '2023-10-25', 2);
