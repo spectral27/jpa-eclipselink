@@ -1,2 +1,2 @@
 export PGPASSWORD=postgres
-psql -U postgres -d postgres -f setup/drop-create.sql
+psql -U postgres -d postgres -f setup/clean.sql

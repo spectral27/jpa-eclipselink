@@ -25,4 +25,21 @@ public class ScopeRepository {
         return scopes;
     }
 
+    public void insert(Scope scope) {
+        EntityManager manager = factory.createEntityManager();
+        manager.getTransaction().begin();
+
+        manager.persist(scope);
+
+        if (scope.getVersions() != null && !scope.getVersions().isEmpty()) {
+            scope.getVersions().forEach(version -> {
+                version.setScope(scope);
+                manager.persist(version);
+            });
+        }
+
+        manager.getTransaction().commit();
+        manager.close();
+    }
+
 }

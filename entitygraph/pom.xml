@@ -55,7 +55,7 @@
                 <version>1.0.0</version>
                 <executions>
                     <execution>
-                        <phase>process-classes</phase>
+                        <phase>package</phase>
                         <goals>
                             <goal>weave</goal>
                         </goals>

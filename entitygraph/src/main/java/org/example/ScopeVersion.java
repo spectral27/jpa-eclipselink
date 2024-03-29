@@ -11,7 +11,7 @@ import java.time.LocalDate;
 public class ScopeVersion {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     private String version;
