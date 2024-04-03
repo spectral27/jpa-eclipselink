@@ -13,6 +13,11 @@
             <property name="jakarta.persistence.jdbc.user" value="postgres"/>
             <property name="jakarta.persistence.jdbc.password" value="postgres"/>
             <!--
+            <property name="jakarta.persistence.schema-generation.scripts.action" value="drop-and-create"/>
+            OR
+            <property name="jakarta.persistence.schema-generation.scripts.action" value="create"/>
+            <property name="jakarta.persistence.schema-generation.scripts.create-target" value="create.sql"/>
+            <property name="jakarta.persistence.schema-generation.scripts.drop-target" value="drop.sql"/>
             <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
             <property name="eclipselink.create-ddl-jdbc-file-name" value="createddl.sql"/>
             <property name="eclipselink.drop-ddl-jdbc-file-name" value="dropddl.sql"/>
