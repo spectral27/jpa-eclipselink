@@ -1,0 +1,28 @@
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+
+    <persistence-unit name="myunit">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <mapping-file>orm.xml</mapping-file>
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="org.h2.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:h2:mem:mydatabase;DB_CLOSE_DELAY=-1"/>
+            <property name="jakarta.persistence.jdbc.user" value="username"/>
+            <property name="jakarta.persistence.jdbc.password" value="password"/>
+            <!--
+            <property name="jakarta.persistence.schema-generation.scripts.action" value="drop-and-create"/>
+            OR
+            <property name="jakarta.persistence.schema-generation.scripts.action" value="create"/>
+            <property name="jakarta.persistence.schema-generation.scripts.create-target" value="create.sql"/>
+            <property name="jakarta.persistence.schema-generation.scripts.drop-target" value="drop.sql"/>
+            <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
+            <property name="eclipselink.create-ddl-jdbc-file-name" value="createddl.sql"/>
+            <property name="eclipselink.drop-ddl-jdbc-file-name" value="dropddl.sql"/>
+            <property name="eclipselink.ddl-generation.output-mode" value="both"/>
+            -->
+        </properties>
+    </persistence-unit>
+
+</persistence>
